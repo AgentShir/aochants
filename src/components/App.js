@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import logo from '../logo.svg';
+import '../styles/App.css';
+
+// Components
+import BaseLayout from '../components/BaseLayout.js';
 
 class App extends Component {
   render() {
@@ -12,6 +15,8 @@ class App extends Component {
         </header>
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
+          <BaseLayout>
+          </BaseLayout>
         </p>
       </div>
     );
