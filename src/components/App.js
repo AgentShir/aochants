@@ -7,6 +7,7 @@ import BaseLayout from '../components/BaseLayout.js';
 import PopularChants from '../components/PopularChants.js';
 import Songs from '../components/Songs.js';
 import About from '../components/About.js';
+import Contact from '../components/Contact.js';
 
 class App extends Component {
   render() {
@@ -17,6 +18,7 @@ class App extends Component {
             <Route path="/popularchants" component={PopularChants} />
             <Route path="/songs" component={Songs} />
             <Route path="/about" component={About} />
+            <Route path="/contact" component={Contact} />
           </Switch>
         </BaseLayout>
       </BrowserRouter>
