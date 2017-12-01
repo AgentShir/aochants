@@ -44,8 +44,8 @@ class Header extends Component {
               <Link to="/popularchants" style={{ textDecoration: "none"}}>
                 <MenuItem>Popular Chants</MenuItem>
               </Link>
-              <Link to="/songs" style={{ textDecoration: "none"}}>
-                <MenuItem>Songs</MenuItem>
+              <Link to="/otherchants" style={{ textDecoration: "none"}}>
+                <MenuItem>Other Chants</MenuItem>
               </Link>
               <Link to="/about" style={{ textDecoration: "none" }}>
                 <MenuItem>About</MenuItem>

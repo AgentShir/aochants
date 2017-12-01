@@ -12,31 +12,26 @@ import ContentInbox from 'material-ui/svg-icons/content/inbox';
 import ActionGrade from 'material-ui/svg-icons/action/grade';
 import ContentSend from 'material-ui/svg-icons/content/send';
 import ContentDrafts from 'material-ui/svg-icons/content/drafts';
-import Divider from 'material-ui/Divider';
-import ActionInfo from 'material-ui/svg-icons/action/info';
+// import Divider from 'material-ui/Divider';
+// import ActionInfo from 'material-ui/svg-icons/action/info';
 
 
 class PopularChants extends Component {
   render() {
     return (
-      <div className="App">
-        <MobileTearSheet>
-          <List>
-            <ListItem primaryText="Inbox" leftIcon={<ContentInbox />} />
-            <ListItem primaryText="Starred" leftIcon={<ActionGrade />} />
-            <ListItem primaryText="Sent mail" leftIcon={<ContentSend />} />
-            <ListItem primaryText="Drafts" leftIcon={<ContentDrafts />} />
-            <ListItem primaryText="Inbox" leftIcon={<ContentInbox />} />
-          </List>
-          <Divider />
-          <List>
-            <ListItem primaryText="All mail" rightIcon={<ActionInfo />} />
-            <ListItem primaryText="Trash" rightIcon={<ActionInfo />} />
-            <ListItem primaryText="Spam" rightIcon={<ActionInfo />} />
-            <ListItem primaryText="Follow up" rightIcon={<ActionInfo />} />
-          </List>
-        </MobileTearSheet>
-      </div>  
+      <div className="wrapper">
+        <div className="container">
+          <MobileTearSheet>
+            <List>
+              <ListItem primaryText="We Love Ya" leftIcon={<ContentInbox />} />
+              <ListItem primaryText="I Believe That We Will Win" leftIcon={<ActionGrade />} />
+              <ListItem primaryText="US 'Til I Die'" leftIcon={<ContentSend />} />
+              <ListItem primaryText="You're Not Singing Anymore (Or Overthere)" leftIcon={<ContentDrafts />} />
+              <ListItem primaryText="Everywhere We Go" leftIcon={<ContentInbox />} />
+            </List>
+          </MobileTearSheet>
+        </div>
+      </div>
     );
   }
 }

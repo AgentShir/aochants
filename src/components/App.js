@@ -5,7 +5,7 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import Home from '../components/Home.js';
 import BaseLayout from '../components/BaseLayout.js';
 import PopularChants from '../components/PopularChants.js';
-import Songs from '../components/Songs.js';
+import OtherChants from '../components/OtherChants.js';
 import About from '../components/About.js';
 import Contact from '../components/Contact.js';
 
@@ -22,7 +22,7 @@ class App extends Component {
             <Switch>
               <Route exact path="/" component={Home} />
               <Route path="/popularchants" component={PopularChants} />
-              <Route path="/songs" component={Songs} />
+              <Route path="/otherchants" component={OtherChants} />
               <Route path="/about" component={About} />
               <Route path="/contact" component={Contact} />
             </Switch>

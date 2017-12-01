@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../styles/App.css';
 
-class SongsCard extends Component {
+class OtherChantsCard extends Component {
   render() {
     return (
       <div className="App">
@@ -11,4 +11,4 @@ class SongsCard extends Component {
   }
 }
 
-export default SongsCard;
+export default OtherChantsCard;
