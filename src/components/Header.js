@@ -35,7 +35,7 @@ class Header extends Component {
   render() {
     return (
       <MuiThemeProvider muiTheme={muiTheme}>
-        <AppBar title="AO Chants" iconClassNameRight="muidocs-icon-navigation-expand-more" onClick={this.handleToggle} />
+        <AppBar style={{textAlign: "center"}} title="AO Chants" iconClassNameRight="muidocs-icon-navigation-expand-more" onClick={this.handleToggle} />
           <Drawer open={this.state.open}>
             <MenuItem onClick={this.handleToggle}>{<CloseIcon />}</MenuItem>
               <Link to ="/" style={{ textDecoration: "none"}}>

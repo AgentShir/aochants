@@ -1,4 +1,4 @@
-###AO Chants
+### AO Chants
 
 This is an app that will contain some of the AO chants and songs.
 

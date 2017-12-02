@@ -8,8 +8,8 @@ import aochants from '../images/aochants.jpg';
 import {Card, CardMedia, CardTitle, CardText} from 'material-ui/Card';
 
 const cardStyle= {
-  maxWidth: '50%',
-  maxHeight: '70%'
+  maxWidth: '70%',
+  maxHeight: '100%',
 }
 
 class Home extends Component {
@@ -21,9 +21,9 @@ class Home extends Component {
             <CardMedia>
               <img src={aochants} alt="The American Outlaws in Sandy, Utah" />
             </CardMedia>
-            <CardTitle title="Welcome to AO Chants!" />
+            <CardTitle style={{textAlign: "center"}} title="Welcome to AO Chants!" />
             <CardText>
-              I created AO Chants as a way to have a quick reference to all of the American Outlaws chants and songs. Our job, as American Outlaws, is to positively support our team!
+              AO Chants was created as a quick reference of some of the chants and songs used by the American Outlaws.
             </CardText>
           </Card>
         </div>
