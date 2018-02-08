@@ -16,6 +16,9 @@ import {indigo900} from 'material-ui/styles/colors';
 import {grey50} from 'material-ui/styles/colors';
 
 const muiTheme = getMuiTheme({
+  appBar: {
+    height: 40,
+  },
   palette: {
     primary1Color: red900,
     canvasColor: indigo900,
@@ -42,10 +45,7 @@ class Header extends Component {
                 <MenuItem>Home</MenuItem>
               </Link>
               <Link to="/popularchants" style={{ textDecoration: "none"}}>
-                <MenuItem>Popular Chants</MenuItem>
-              </Link>
-              <Link to="/otherchants" style={{ textDecoration: "none"}}>
-                <MenuItem>Other Chants</MenuItem>
+                <MenuItem>Chants</MenuItem>
               </Link>
               <Link to="/about" style={{ textDecoration: "none" }}>
                 <MenuItem>About</MenuItem>
@@ -53,6 +53,14 @@ class Header extends Component {
               <Link to="/contact" style={{ textDecoration: "none"}}>
                 <MenuItem>Contact</MenuItem>
               </Link>
+              <Link to ="/admin" style={{ textDecoration: "none"}}>
+                <MenuItem>Admin</MenuItem>
+              </Link>
+              <Link to="/signin" style={{ textDecoration: "none"}}>
+                <MenuItem>Sign In </MenuItem>
+              </Link>
+{/* TODO: SignIn disappears after logged in*/}
+{/* TODO: Admin only shows if logged in */}
         </Drawer>
       </MuiThemeProvider>
     );

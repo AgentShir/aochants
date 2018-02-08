@@ -4,10 +4,11 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom';
 // App Components
 import Home from '../components/Home.js';
 import BaseLayout from '../components/BaseLayout.js';
-import PopularChants from '../components/PopularChants.js';
-import OtherChants from '../components/OtherChants.js';
+import Chants from '../components/Chants.js';
 import About from '../components/About.js';
 import Contact from '../components/Contact.js';
+import Admin from '../components/Admin.js';
+import SignIn from '../components/SignIn.js';
 
 // Styles
 import '../styles/App.css';
@@ -21,10 +22,11 @@ class App extends Component {
           <BaseLayout>
             <Switch>
               <Route exact path="/" component={Home} />
-              <Route path="/popularchants" component={PopularChants} />
-              <Route path="/otherchants" component={OtherChants} />
+              <Route path="/chants" component={Chants} />
               <Route path="/about" component={About} />
               <Route path="/contact" component={Contact} />
+              <Route path="/admin" component={Admin} />
+              <Route path="/signin" component={SignIn} />
             </Switch>
           </BaseLayout>
         </BrowserRouter>
