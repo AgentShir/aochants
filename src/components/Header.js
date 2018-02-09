@@ -44,21 +44,21 @@ class Header extends Component {
               <Link to ="/" style={{ textDecoration: "none"}}>
                 <MenuItem>Home</MenuItem>
               </Link>
-              <Link to="/popularchants" style={{ textDecoration: "none"}}>
+              <Link to="/chants" style={{ textDecoration: "none"}}>
                 <MenuItem>Chants</MenuItem>
               </Link>
-              <Link to="/about" style={{ textDecoration: "none" }}>
+{/*}              <Link to="/about" style={{ textDecoration: "none" }}>
                 <MenuItem>About</MenuItem>
-              </Link>
-              <Link to="/contact" style={{ textDecoration: "none"}}>
+              </Link> */}
+{/*              <Link to="/contact" style={{ textDecoration: "none"}}>
                 <MenuItem>Contact</MenuItem>
-              </Link>
+              </Link> */}
               <Link to ="/admin" style={{ textDecoration: "none"}}>
                 <MenuItem>Admin</MenuItem>
               </Link>
-              <Link to="/signin" style={{ textDecoration: "none"}}>
+{/*             <Link to="/signin" style={{ textDecoration: "none"}}>
                 <MenuItem>Sign In </MenuItem>
-              </Link>
+              </Link> */}
 {/* TODO: SignIn disappears after logged in*/}
 {/* TODO: Admin only shows if logged in */}
         </Drawer>

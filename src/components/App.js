@@ -8,7 +8,7 @@ import Chants from '../components/Chants.js';
 import About from '../components/About.js';
 import Contact from '../components/Contact.js';
 import Admin from '../components/Admin.js';
-import SignIn from '../components/SignIn.js';
+// import SignIn from '../components/SignIn.js';
 
 // Styles
 import '../styles/App.css';
@@ -26,7 +26,7 @@ class App extends Component {
               <Route path="/about" component={About} />
               <Route path="/contact" component={Contact} />
               <Route path="/admin" component={Admin} />
-              <Route path="/signin" component={SignIn} />
+{/*              <Route path="/signin" component={SignIn} /> */}
             </Switch>
           </BaseLayout>
         </BrowserRouter>

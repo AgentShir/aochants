@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { auth, googleAuthProvider } from './firebase';
+// import { auth, googleAuthProvider } from './firebase';
 
 // Material-UI Components
 import RaisedButton from 'material-ui/RaisedButton';
@@ -21,7 +21,7 @@ class SignIn extends Component {
       <div className="App">
         <TextField hintText="User Name or Email" underlineStyle={style.underlineStyle} /><br />
         <PasswordField floatingLabelText="Enter Your Password" underlineStyle={style.underlineStyle} /><br />
-        <RaisedButton backgroundColor="#1A237E" labelColor="#FFFFFF" label="Sign In" style={style} onClick={() => auth.signIn(googleAuthProvider)} />
+{/*        <RaisedButton backgroundColor="#1A237E" labelColor="#FFFFFF" label="Sign In" style={style} onClick={() => auth.signIn(googleAuthProvider)} /> */}
       </div>
     )
   }

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../styles/App.css';
 
 // Components
-import { database } from './firebase';
+// import { database } from './firebase';
 // import SignIn from '../components/SignIn.js';
 
 // Material-UI Components
@@ -32,15 +32,15 @@ class Admin extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  componentDidMount() {
-      this.dataRef = database.ref('/Chants');
-
-      database.ref().on('value', (snapshot) => {
-      this.setState({
-        data: snapshot.val()
-      })
-    });
-  }
+  // componentDidMount() {
+  //     this.dataRef = database.ref('/Chants');
+  //
+  //     database.ref().on('value', (snapshot) => {
+  //     this.setState({
+  //       data: snapshot.val()
+  //     })
+  //   });
+  // }
 
   handleChange(event) {
     const newData = event.target.value;
